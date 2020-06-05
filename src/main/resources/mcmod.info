@@ -1,0 +1,16 @@
+[
+{
+  "modid": "c3s",
+  "name": "Bifrost",
+  "description": "Bifrost C3S - Client Side Server Switcher",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": [""],
+  "credits": "",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
