@@ -3,6 +3,7 @@ package io.github.c3s;
 import org.apache.logging.log4j.Logger;
 
 import io.github.c3s.proxy.AbstractModProxy;
+import io.github.c3s.servers.ServerNetwork;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.SidedProxy;
@@ -19,6 +20,7 @@ public class C3SMod {
     private static String version;
 
     public static Logger logger;
+    public static ServerNetwork network; //TODO This should be null when we are not connected to the network
     
     /*
      * Proxy stuff

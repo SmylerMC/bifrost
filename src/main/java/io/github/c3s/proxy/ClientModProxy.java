@@ -2,6 +2,8 @@ package io.github.c3s.proxy;
 
 import io.github.c3s.C3SEventHandler;
 import io.github.c3s.C3SMod;
+import io.github.c3s.servers.ServerNetwork;
+import net.minecraft.client.Minecraft;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
@@ -29,6 +31,7 @@ public class ClientModProxy extends AbstractModProxy {
 	@Override
 	public void onPostInitialization(FMLPostInitializationEvent event) {
 		C3SMod.logger.debug("Post-initializing " + C3SMod.getName());
+		C3SMod.network = new ServerNetwork(Minecraft.getMinecraft()); //TODO This should not be there
 	}
 
 }
